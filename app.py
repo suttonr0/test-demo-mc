@@ -10,9 +10,9 @@ def helloworld():
 def goodbye():
 	return 'Goodbye'
 
-@app.route('/htmlpage/<name>')
-def showHtml(name):
-	return render_template('webpage.html', input = name)
+@app.route('/htmlpage/')
+def showHtml():
+	return render_template('webpage.html')
 
 if __name__ == "__main__":
 	app.run()
