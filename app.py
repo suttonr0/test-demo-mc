@@ -6,10 +6,5 @@ app = Flask(__name__)
 def helloworld():
 	return 'Hello World'
 
-@app.route('/sub/')
-def goodbye():
-	return 'Goodbye'
-
-
 if __name__ == "__main__":
 	app.run()
